@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Solomon Israel Omogbolahan | Virtual Assistant & Customer Support</title>
+
+  <meta name="description" content="Solomon Israel Omogbolahan is a Virtual Assistant, Customer Support Professional and Electrical Engineer open to global opportunities.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #172033;
+      background: #f7f9fc;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e7eaf0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #16213e;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #465064;
+    }
+
+    .nav-links a:hover {
+      color: #3157d5;
+    }
+
+    .hero {
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg, #eef3ff, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #e6edff;
+      color: #3157d5;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 6vw, 4.5rem);
+      line-height: 1.08;
+      margin-bottom: 20px;
+      color: #10182d;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      font-weight: 500;
+      color: #536078;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 1.1rem;
+      color: #4c5870;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: #3157d5;
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: #2445b5;
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      background: white;
+      color: #3157d5;
+      border: 1px solid #ccd4e5;
+    }
+
+    .button-secondary:hover {
+      transform: translateY(-2px);
+      border-color: #3157d5;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #10182d;
+    }
+
+    .section-title p {
+      color: #68748a;
+    }
+
+    .about {
+      background: #ffffff;
+    }
+
+    .about-text {
+      max-width: 850px;
+      font-size: 1.05rem;
+      color: #4c5870;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+    }
+
+    .highlight {
+      color: #3157d5;
+      font-weight: 700;
+    }
+
+    .experience-grid,
+    .projects-grid,
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e9f1;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 8px 25px rgba(20, 35, 70, 0.05);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 7px;
+      color: #17213a;
+    }
+
+    .card .date {
+      font-size: 0.9rem;
+      color: #3157d5;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #5d687c;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      color: #5d687c;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skill {
+      background: #ffffff;
+      padding: 18px;
+      border-radius: 10px;
+      border: 1px solid #e5e9f1;
+      font-weight: 700;
+      color: #37445c;
+      text-align: center;
+    }
+
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      padding: 5px 9px;
+      background: #edf1ff;
+      color: #3157d5;
+      border-radius: 20px;
+      margin-bottom: 13px;
+      font-weight: 700;
+    }
+
+    .contact {
+      background: #16213e;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title h2 {
+      color: white;
+    }
+
+    .contact .section-title p {
+      color: #cbd3e4;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .contact-buttons {
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    .contact .button-secondary {
+      background: transparent;
+      color: white;
+      border-color: #69748b;
+    }
+
+    footer {
+      background: #10182d;
+      color: #aeb7c9;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .experience-grid,
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        padding: 75px 0 60px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        width: 92%;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Solomon Israel</div>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <span class="status">Open for Global Opportunities</span>
+
+          <h1>Solomon Israel Omogbolahan</h1>
+
+          <h2>Virtual Assistant • Customer Support • Administrative Support • Electrical Engineer</h2>
+
+          <p>
+            I help individuals and businesses stay organized, communicate effectively,
+            manage tasks, handle information, and keep daily operations moving smoothly.
+            I bring over 4 years of technical operations experience together with
+            professional Virtual Assistant training from ALX.
+          </p>
+
+          <div class="buttons">
+            <a class="button button-primary" href="#contact">Let's Work Together</a>
+            <a class="button button-secondary" href="#projects">View My Work</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>A practical professional who enjoys turning busy workflows into organized ones.</p>
+        </div>
+
+        <div class="about-text">
+
+          <p>
+            I am a detail-oriented professional with a background in electrical engineering,
+            power plant operations, administrative support, and Virtual Assistance.
+          </p>
+
+          <p>
+            In my current technical operations role, I work in a fast-paced environment
+            where communication, accurate reporting, documentation, coordination, and
+            timely problem-solving are essential.
+          </p>
+
+          <p>
+            I also completed the <span class="highlight">ALX Virtual Assistant Program</span>,
+            where I developed practical skills in productivity tools, task execution,
+            research, documentation, client work, career readiness, and remote collaboration.
+          </p>
+
+          <p>
+            My goal is to support remote teams, business owners, executives, and clients
+            by taking care of important tasks behind the scenes so they can focus on
+            higher-value priorities.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="experience">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Experience & Education</h2>
+          <p>Professional experience, training, and technical foundation.</p>
+        </div>
+
+        <div class="experience-grid">
+
+          <div class="card">
+            <h3>Generator / Power Plant Operations</h3>
+            <div class="date">Global Alliance for Chemical Industry • 4+ Years</div>
+
+            <p>
+              Hands-on experience managing industrial gas and diesel generators
+              and supporting power distribution operations.
+            </p>
+
+            <ul>
+              <li>Coordinate daily generator and power operations.</li>
+              <li>Prepare operational reports and maintain accurate records.</li>
+              <li>Communicate operational issues and updates across shifts.</li>
+              <li>Coordinate teams and monitor equipment status.</li>
+              <li>Support troubleshooting, escalation, and operational continuity.</li>
+            </ul>
+          </div>
+
+
+          <div class="card">
+            <h3>ALX Virtual Assistant Program</h3>
+            <div class="date">Certificate of Achievement • 2026</div>
+
+            <p>
+              Completed professional Virtual Assistant training covering practical
+              remote-work and administrative skills.
+            </p>
+
+            <ul>
+              <li>Professional identity and workplace soft skills.</li>
+              <li>Technology tools and productivity workflows.</li>
+              <li>Task execution, research, and documentation.</li>
+              <li>Freelancing, client work, and career readiness.</li>
+              <li>Practical Virtual Assistant projects and deliverables.</li>
+            </ul>
+          </div>
+
+
+          <div class="card">
+            <h3>Diploma in Electrical / Electronics Engineering</h3>
+            <div class="date">The Polytechnic of Ipaton • 2018–2021</div>
+
+            <p>
+              Technical education providing a strong foundation in electrical
+              and electronics engineering principles, safety, maintenance, and systems.
+            </p>
+          </div>
+
+
+          <div class="card">
+            <h3>Professional Approach</h3>
+            <div class="date">Remote-Ready Mindset</div>
+
+            <p>
+              I value clear communication, accountability, organization,
+              attention to detail, and completing tasks properly rather than
+              simply checking them off a list.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="skills" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Tools and capabilities I can bring to a remote team.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill">Virtual Assistance</div>
+          <div class="skill">Customer Support</div>
+          <div class="skill">Administrative Support</div>
+          <div class="skill">Email Management</div>
+          <div class="skill">Research</div>
+          <div class="skill">Data Entry</div>
+          <div class="skill">Task Coordination</div>
+          <div class="skill">Documentation</div>
+          <div class="skill">Professional Communication</div>
+          <div class="skill">Microsoft Office</div>
+          <div class="skill">Google Workspace</div>
+          <div class="skill">Microsoft Excel</div>
+          <div class="skill">Canva</div>
+          <div class="skill">ChatGPT</div>
+          <div class="skill">Reporting</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="projects">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Selected Projects</h2>
+          <p>Practical work from my Virtual Assistant training and professional development.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="card">
+            <span class="project-tag">Virtual Assistance</span>
+
+            <h3>Client Productivity Pack</h3>
+
+            <p>
+              Created a productivity support package for a fictional consulting
+              business, including task organization, scheduling considerations,
+              and coordination across Lagos, Nairobi, London, and New York time zones.
+            </p>
+          </div>
+
+
+          <div class="card">
+            <span class="project-tag">Career & Freelancing</span>
+
+            <h3>VA Career Action Plan & Toolkit</h3>
+
+            <p>
+              Developed a structured career action plan and practical toolkit
+              focused on building a remote Virtual Assistant career and preparing
+              for client opportunities.
+            </p>
+          </div>
+
+
+          <div class="card">
+            <span class="project-tag">Research & Data</span>
+
+            <h3>Research, Data Entry & Reporting</h3>
+
+            <p>
+              Practiced structured online research, information gathering,
+              data organization, accuracy checking, and presenting findings
+              in a clear and useful format.
+            </p>
+          </div>
+
+
+          <div class="card">
+            <span class="project-tag">Planning</span>
+
+            <h3>Travel Planning Workflow</h3>
+
+            <p>
+              Built a practical travel-planning workflow covering research,
+              organization, scheduling, and presenting travel information
+              in a client-friendly format.
+            </p>
+          </div>
+
+
+          <div class="card">
+            <span class="project-tag">Professional Documents</span>
+
+            <h3>Job Application & Freelance Kit</h3>
+
+            <p>
+              Created a professional application toolkit containing a resume,
+              cover letter, LinkedIn profile presentation, and supporting
+              materials for remote opportunities.
+            </p>
+          </div>
+
+
+          <div class="card">
+            <span class="project-tag">Operations</span>
+
+            <h3>Operational Reporting</h3>
+
+            <p>
+              Developed practical reporting and documentation workflows for
+              technical operations, helping communicate equipment status,
+              activities, and shift information clearly.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Let's Work Together</h2>
+
+          <p>
+            I am open to remote opportunities in Virtual Assistance,
+            Customer Support, Administrative Support, and related roles.
+          </p>
+        </div>
+
+        <div class="buttons contact-buttons">
+
+          <a class="button button-primary"
+             href="mailto:Solomonisreal59@gmail.com">
+            Email Me
+          </a>
+
+          <a class="button button-secondary"
+             href="https://www.linkedin.com/in/israel-solomon-01b8aa135"
+             target="_blank"
+             rel="noopener noreferrer">
+            LinkedIn
+          </a>
+
+          <a class="button button-secondary"
+             href="https://github.com/solomonisreal59"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>© 2026 Solomon Israel Omogbolahan. All rights reserved.</p>
+    <p>Virtual Assistant • Customer Support • Administrative Support</p>
+  </footer>
+
+</body>
+</html>
